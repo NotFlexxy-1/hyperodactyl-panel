@@ -59,4 +59,4 @@ and there are plenty more games available provided by the community. Some of the
 
 Hyperodactyl® Copyright © 2026 NotFlexxy-1 and contributors.
 
-Code released under the [MIT License](./LICENSE.md).
+Code released under the [MIT License](./LICENSE).
