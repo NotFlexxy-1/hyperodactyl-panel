@@ -1,9 +1,9 @@
-[![Logo Image](https://cdn.hyperodactyl.io/logos/new/hyperodactyl_logo.png)](https://hyperodactyl.io)
+[![Logo Image](https://i.postimg.cc/k5XBgYnX/Hyperodactyl-panel-bg.png)](https://hyperodactyl.hypernet.com.pl)
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/hyperodactyl/panel/ci.yaml?label=Tests&style=for-the-badge&branch=1.0-develop)
-![Discord](https://img.shields.io/discord/122900397965705216?label=Discord&logo=Discord&logoColor=white&style=for-the-badge)
-![GitHub Releases](https://img.shields.io/github/downloads/hyperodactyl/panel/latest/total?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/hyperodactyl/panel?style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NotFlexxy-1/hyperodactyl-panel/ci.yaml?label=Tests&style=for-the-badge&branch=1.0-develop)
+![Discord](https://img.shields.io/discord/1487400760764399739?label=Discord&logo=Discord&logoColor=white&style=for-the-badge)
+![GitHub Releases](https://img.shields.io/github/downloads/NotFlexxy-1/hyperodactyl-panel/latest/total?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/NotFlexxy-1/hyperodactyl-panel?style=for-the-badge)
 
 # Hyperodactyl Panel
 
@@ -13,30 +13,19 @@ UI to end users.
 
 Stop settling for less. Make game servers a first class citizen on your platform.
 
-![Image](https://cdn.hyperodactyl.io/site-assets/hyperodactyl_v1_demo.gif)
+![Image](https://i.postimg.cc/k5XBgYnX/Hyperodactyl-panel-bg.png)
 
 ## Documentation
 
-* [Panel Documentation](https://hyperodactyl.io/panel/1.0/getting_started.html)
-* [Wings Documentation](https://hyperodactyl.io/wings/1.0/installing.html)
-* [Community Guides](https://hyperodactyl.io/community/about.html)
-* Or, get additional help [via Discord](https://discord.gg/hyperodactyl)
+* [Panel Documentation](https://hyperodactyl.hypernet.com.pl/panel/1.0/getting_started.html)
+* [Wings Documentation](https://hyperodactyl.hypernet.com.pl/wings/1.0/installing.html)
+* [Community Guides](https://hyperodactyl.hypernet.com.pl/community/about.html)
+* Or, get additional help [via Discord](https://discord.gg/d5MW4YAMsP)
 
 ## Sponsors
 
 I would like to extend my sincere thanks to the following sponsors for helping fund Hyperodactyl's development.
-[Interested in becoming a sponsor?](https://github.com/sponsors/hyperodactyl)
-
-| Company                                                                           | About                                                                                                                                                                                                                                           |
-|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Buildurly**](https://buildurly.com/)                                           | Buildurly is a hardware procurement company. They deliver tailored, enterprise-grade hardware solutions designed around your unique needs. From sourcing to delivery, Buildurly's white-glove service ensures a seamless, worry-free, professional experience.                                                                                                                                          |
-| [**Hosturly**](https://hosturly.com/)                                             | Hosturly is an enterprise hosting provider. They provide cost-effective, high-performance, and reliable services, including VPS, Web, Dedicated, and Colocation.                                                                                |
-| [**indifferent broccoli**](https://indifferentbroccoli.com/)                      | indifferent broccoli is a game server hosting and rental company. With them, you get top-notch computer power for your gaming sessions. They destroy lag, latency, and complexity--letting you focus on the fun stuff.                         |
-| [**Infraly, LLC**](https://infraly.co/)                                           | Infraly is an infrastructure company powering the next generation of online services. Through their brands, Infraly delivers cutting-edge solutions across multiple markets. Their vertically integrated approach provides unmatched performance, scalability, and reliability, giving our customers full control.                                                                                     |
-| [**MineStrator**](https://minestrator.com/)                                       | MineStrator is a game server hosting provider. Looking for the most high-end French hosting company for your Minecraft server? More than 24,000 members on our Discord trust us. Give us a try!                                                |
-| [**Physgun**](https://physgun.com/)                                               | Physgun is a game server hosting provider. Most providers rent rack space and rebrand a panel. At Physgun, they engineer the performance, write the features, and staff the support. Physgun truly is game hosting perfected!                   |
-| [**WISP**](https://wisp.gg/)                                                      | WISP is an industry-leading SaaS platform for game server management, designed for hosting companies, gaming organizations, and enthusiasts. WISP combines modern, intuitive interfaces with powerful tools, making server deployment and administration seamless, scalable, and efficient.                                                                                                                 |
-
+[Interested in becoming a sponsor?](https://github.com/sponsors/NotFlexxy-1)
 
 ### Supported Games
 
@@ -65,10 +54,10 @@ and there are plenty more games available provided by the community. Some of the
 * Xonotic
 * Starmade
 * Discord ATLBot, and most other Node.js/Python discord bots
-* [and many more...](https://eggs.hyperodactyl.io)
+* [and many more...](https://eggs.hypernet.com.pl)
 
 ## License
 
-Hyperodactyl® Copyright © 2015 - 2022 Dane Everitt and contributors.
+Hyperodactyl® Copyright © 2026 NotFlexxy-1 and contributors.
 
 Code released under the [MIT License](./LICENSE.md).
