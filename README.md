@@ -1,7 +1,7 @@
 [![Logo Image](https://i.postimg.cc/k5XBgYnX/Hyperodactyl-panel-bg.png)](https://hyperodactyl.hypernet.com.pl)
 
 ![Discord](https://img.shields.io/discord/1487400760764399739?label=Discord&logo=Discord&logoColor=white&style=for-the-badge)
-![GitHub Releases](https://img.shields.io/github/downloads/NotFlexxy-1/hyperodactyl-panel/latest/total?style=for-the-badge)
+[![GitHub Releases](https://img.shields.io/github/downloads/NotFlexxy-1/hyperodactyl-panel/latest/total?style=for-the-badge)](https://github.com/NotFlexxy-1/hyperodactyl-panel/releases)
 ![GitHub contributors](https://img.shields.io/github/contributors/NotFlexxy-1/hyperodactyl-panel?style=for-the-badge)
 
 # Hyperodactyl Panel
