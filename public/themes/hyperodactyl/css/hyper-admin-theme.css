@@ -1,0 +1,81 @@
+/*
+ * HyperNet admin theme overrides for AdminLTE.
+ * Loaded after vendor AdminLTE styles in resources/views/layouts/admin.blade.php.
+ * Colors follow the CSS variables emitted by BrandingService so the admin panel
+ * matches the React client panel.
+ */
+:root {
+    --hyper-primary: var(--hyper-color-primary, #5b8cff);
+    --hyper-accent: var(--hyper-color-accent, #7c5bff);
+    --hyper-bg: var(--hyper-color-background, #0b1020);
+    --hyper-surface: var(--hyper-color-surface, #141821);
+    --hyper-text: var(--hyper-color-text, #f5f7fa);
+    --hyper-muted: rgba(245, 247, 250, 0.62);
+    --hyper-border: rgba(255, 255, 255, 0.08);
+    --hyper-radius: var(--hyper-border-radius, 0.75rem);
+}
+body.skin-blue, body.hold-transition {
+    background: var(--hyper-bg); color: var(--hyper-text);
+    font-family: var(--hyper-font, 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif);
+    -webkit-font-smoothing: antialiased;
+}
+.content-wrapper, .right-side { background: var(--hyper-bg); }
+.skin-blue .main-header .navbar, .skin-blue .main-header .logo {
+    background: linear-gradient(90deg, var(--hyper-surface), var(--hyper-bg));
+    border-bottom: 1px solid var(--hyper-border); box-shadow: none;
+}
+.skin-blue .main-header .logo:hover { background: var(--hyper-surface); }
+.skin-blue .main-header .logo img { display: inline-block; vertical-align: middle; }
+.skin-blue .main-header .navbar .nav > li > a { color: var(--hyper-muted); transition: color .15s ease, background .15s ease; }
+.skin-blue .main-header .navbar .nav > li > a:hover, .skin-blue .main-header .navbar .nav > li > a:focus { color: var(--hyper-text); background: rgba(255,255,255,.04); }
+.skin-blue .main-sidebar, .skin-blue .wrapper, .skin-blue .left-side { background: var(--hyper-surface); }
+.skin-blue .sidebar-menu > li.header { color: var(--hyper-muted); background: transparent; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; font-weight: 600; }
+.skin-blue .sidebar-menu > li > a { color: var(--hyper-muted); border-left: 3px solid transparent; border-radius: 0 var(--hyper-radius) var(--hyper-radius) 0; transition: all .15s ease; }
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a, .skin-blue .sidebar-menu > li.menu-open > a { color: var(--hyper-text); background: rgba(91,140,255,.12); border-left-color: var(--hyper-primary); }
+.skin-blue .treeview-menu > li > a { color: var(--hyper-muted); }
+.skin-blue .treeview-menu > li.active > a, .skin-blue .treeview-menu > li > a:hover { color: var(--hyper-text); }
+.content-header > h1 { color: var(--hyper-text); font-weight: 600; letter-spacing: -.01em; }
+.content-header > h1 > small { color: var(--hyper-muted); }
+.content-header > .breadcrumb { background: transparent; }
+.content-header > .breadcrumb > li > a, .content-header > .breadcrumb > .active { color: var(--hyper-muted); }
+.box { background: var(--hyper-surface); border: 1px solid var(--hyper-border); border-radius: var(--hyper-radius); box-shadow: 0 12px 32px -20px rgba(0,0,0,.9); color: var(--hyper-text); }
+.box.box-primary { border-top-color: var(--hyper-primary); }
+.box.box-danger { border-top-color: var(--hyper-color-danger, #e6485d); }
+.box.box-success { border-top-color: var(--hyper-color-success, #3bd671); }
+.box-header { border-bottom: 1px solid var(--hyper-border); color: var(--hyper-text); }
+.box-header .box-title { font-weight: 600; }
+.box-footer { background: transparent; border-top: 1px solid var(--hyper-border); color: var(--hyper-muted); }
+.table { color: var(--hyper-text); }
+.table > thead > tr > th { border-bottom: 1px solid var(--hyper-border); color: var(--hyper-muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+.table > tbody > tr > td, .table > tbody > tr > th { border-top: 1px solid var(--hyper-border); vertical-align: middle; }
+.table-hover > tbody > tr:hover { background: rgba(255,255,255,.03); }
+.table-striped > tbody > tr:nth-of-type(odd) { background: rgba(255,255,255,.015); }
+.form-control, .input-group-addon, .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--multiple {
+    background: rgba(255,255,255,.03); border: 1px solid var(--hyper-border); border-radius: calc(var(--hyper-radius) * .6); color: var(--hyper-text); box-shadow: none;
+}
+.form-control:focus { border-color: var(--hyper-primary); box-shadow: 0 0 0 3px rgba(91,140,255,.22); }
+.form-control::placeholder { color: rgba(245,247,250,.35); }
+label, .control-label { color: var(--hyper-text); font-weight: 500; }
+.help-block, .text-muted { color: var(--hyper-muted) !important; }
+.btn { border-radius: calc(var(--hyper-radius) * .6); font-weight: 500; border: 1px solid transparent; transition: filter .15s ease, transform .05s ease; }
+.btn:active { transform: translateY(1px); }
+.btn-primary, .btn-info { background: linear-gradient(135deg, var(--hyper-primary), var(--hyper-accent)); border-color: transparent; color: #fff; }
+.btn-primary:hover, .btn-info:hover, .btn-primary:focus { filter: brightness(1.08); background: linear-gradient(135deg, var(--hyper-primary), var(--hyper-accent)); color: #fff; }
+.btn-default { background: rgba(255,255,255,.05); border-color: var(--hyper-border); color: var(--hyper-text); }
+.btn-default:hover { background: rgba(255,255,255,.1); color: var(--hyper-text); }
+.btn-danger { background: var(--hyper-color-danger, #e6485d); border-color: transparent; }
+.btn-success { background: var(--hyper-color-success, #3bd671); border-color: transparent; color: #06210f; }
+.nav-tabs-custom { background: var(--hyper-surface); border-radius: var(--hyper-radius); border: 1px solid var(--hyper-border); box-shadow: none; }
+.nav-tabs-custom > .nav-tabs > li > a { color: var(--hyper-muted); }
+.nav-tabs-custom > .nav-tabs > li.active > a { background: transparent; color: var(--hyper-text); }
+.nav-tabs-custom > .nav-tabs > li.active { border-top-color: var(--hyper-primary); }
+.label, .badge { border-radius: 999px; font-weight: 600; padding: .28em .7em; }
+.alert { border: 1px solid var(--hyper-border); border-radius: var(--hyper-radius); }
+.main-footer { background: var(--hyper-surface); border-top: 1px solid var(--hyper-border); color: var(--hyper-muted); }
+.pagination > li > a, .pagination > li > span { background: var(--hyper-surface); border-color: var(--hyper-border); color: var(--hyper-text); }
+.pagination > .active > a, .pagination > .active > span { background: var(--hyper-primary); border-color: var(--hyper-primary); }
+.callout { border-radius: var(--hyper-radius); }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--hyper-bg); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,.12); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,.2); }

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Hyperodactyl design tokens — CSS custom properties.
+ * Values are space-separated RGB triples so Tailwind's `rgb(var(--x) / <alpha-value>)`
+ * pattern can apply opacity modifiers. Branding/theme workstreams may override any of
+ * these at runtime (e.g. by writing to `:root` from a theme provider) without touching
+ * this file or tailwind.config.js.
+ */
+:root {
+    --hyper-brand: 91 140 255; /* #5b8cff */
+    --hyper-brand-50: 235 240 255;
+    --hyper-brand-100: 217 227 255;
+    --hyper-brand-400: 129 165 255;
+    --hyper-brand-600: 66 112 232;
+    --hyper-brand-700: 47 88 197;
+    --hyper-accent: 168 121 255;
+
+    --hyper-surface-0: 8 10 14;
+    --hyper-surface-1: 15 18 24;
+    --hyper-surface-2: 21 25 33;
+    --hyper-surface-3: 29 34 44;
+
+    --hyper-border: 255 255 255 / 0.08;
+    --hyper-border-strong: 255 255 255 / 0.16;
+
+    --hyper-text: 236 239 244;
+    --hyper-text-muted: 166 173 187;
+    --hyper-text-subtle: 118 126 141;
+
+    --hyper-success: 52 199 123;
+    --hyper-warning: 245 176 65;
+    --hyper-danger: 240 92 92;
+    --hyper-info: 91 180 255;
+}
+
+/* --hyper-border is stored as an rgb+alpha shorthand for direct use in `border-color`. */
+* {
+    scrollbar-color: rgb(var(--hyper-surface-3)) transparent;
+    scrollbar-width: thin;
+}
+
+html {
+    background-color: rgb(var(--hyper-surface-0));
+}
+
+body {
+    @apply font-sans antialiased;
+    background: radial-gradient(1200px 600px at 10% -10%, rgb(var(--hyper-brand) / 0.08), transparent 60%),
+        radial-gradient(1000px 500px at 100% 0%, rgb(var(--hyper-accent) / 0.06), transparent 55%),
+        rgb(var(--hyper-surface-0));
+    color: rgb(var(--hyper-text));
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--hyper-surface-3));
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.hyper-glass {
+    background-color: rgb(var(--hyper-surface-2) / 0.72);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgb(var(--hyper-border));
+}
+
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 150ms ease-out;
+}
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+}

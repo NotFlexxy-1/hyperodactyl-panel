@@ -1,0 +1,154 @@
+/*
+ * Hyperodactyl — built-in "Arix" theme.
+ * Loaded automatically when config('hyperodactyl_features.theme.default') === 'arix'.
+ * No addon installer required.
+ */
+
+:root {
+  --hd-bg: #0b0f19;
+  --hd-surface: #121826;
+  --hd-surface-2: #1a2233;
+  --hd-border: #232c40;
+  --hd-text: #e6ebf5;
+  --hd-muted: #93a1bd;
+  --hd-accent: #5b8cff;
+  --hd-accent-2: #7c5cff;
+  --hd-success: #35d29a;
+  --hd-warning: #ffb454;
+  --hd-danger: #ff5f6d;
+  --hd-radius: 14px;
+  --hd-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.85);
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 12% -10%, rgba(91, 140, 255, 0.16), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(124, 92, 255, 0.14), transparent 55%),
+    var(--hd-bg);
+  color: var(--hd-text);
+  font-feature-settings: "cv11", "ss01";
+}
+
+.hd-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.hd-brand img {
+  height: 30px;
+  width: auto;
+  filter: drop-shadow(0 0 12px rgba(91, 140, 255, 0.55));
+}
+
+.hd-card,
+.card,
+.panel {
+  background: linear-gradient(180deg, var(--hd-surface) 0%, var(--hd-surface-2) 100%);
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius);
+  box-shadow: var(--hd-shadow);
+}
+
+.hd-sidebar {
+  background: rgba(18, 24, 38, 0.85);
+  backdrop-filter: blur(14px);
+  border-right: 1px solid var(--hd-border);
+}
+
+.hd-nav-item {
+  border-radius: 10px;
+  color: var(--hd-muted);
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.hd-nav-item:hover {
+  background: rgba(91, 140, 255, 0.12);
+  color: var(--hd-text);
+  transform: translateX(2px);
+}
+
+.hd-nav-item.is-active {
+  background: linear-gradient(90deg, rgba(91, 140, 255, 0.24), rgba(124, 92, 255, 0.12));
+  color: #fff;
+  box-shadow: inset 2px 0 0 var(--hd-accent);
+}
+
+.btn,
+.hd-btn {
+  border-radius: 10px;
+  border: 1px solid var(--hd-border);
+  background: var(--hd-surface-2);
+  color: var(--hd-text);
+  transition: filter 140ms ease, transform 140ms ease;
+}
+
+.btn:hover,
+.hd-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.btn-primary,
+.hd-btn--primary {
+  background: linear-gradient(135deg, var(--hd-accent), var(--hd-accent-2));
+  border-color: transparent;
+  color: #fff;
+}
+
+.hd-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hd-status::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.hd-status--online { color: var(--hd-success); }
+.hd-status--starting { color: var(--hd-warning); }
+.hd-status--offline { color: var(--hd-danger); }
+
+.hd-console {
+  background: #070b14;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius);
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.hd-graph {
+  background: linear-gradient(180deg, rgba(91, 140, 255, 0.18), transparent);
+  border-radius: var(--hd-radius);
+}
+
+table thead th {
+  color: var(--hd-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+table tbody tr:hover {
+  background: rgba(91, 140, 255, 0.07);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--hd-border);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--hd-accent); }
